@@ -1,8 +1,6 @@
 # DKSwitchSlider
 
-[![CI Status](https://img.shields.io/travis/Denis Kakačka/DKSwitchSlider.svg?style=flat)](https://travis-ci.org/Denis Kakačka/DKSwitchSlider)
 [![Version](https://img.shields.io/cocoapods/v/DKSwitchSlider.svg?style=flat)](https://cocoapods.org/pods/DKSwitchSlider)
-[![License](https://img.shields.io/cocoapods/l/DKSwitchSlider.svg?style=flat)](https://cocoapods.org/pods/DKSwitchSlider)
 [![Platform](https://img.shields.io/cocoapods/p/DKSwitchSlider.svg?style=flat)](https://cocoapods.org/pods/DKSwitchSlider)
 
 ## Example
@@ -47,7 +45,9 @@ lazy var switcher: DKSwitchSlider = {
 
     return switcher
 }()
+```
 
+```
 override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -66,7 +66,7 @@ func animateBackground(sender: DKSwitchSlider) {
 
 ## Author
 
-Denis Kakačka, deniskakacka@gmail.com
+Denis Kakačka, deniskakacka@gmail.com
 
 ## License
 
