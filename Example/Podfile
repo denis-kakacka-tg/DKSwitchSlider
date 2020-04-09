@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DKSwitchSlider_Example' do
+  pod 'DKSwitchSlider', :path => '../'
+
+  target 'DKSwitchSlider_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
