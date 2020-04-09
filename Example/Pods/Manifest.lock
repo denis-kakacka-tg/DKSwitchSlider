@@ -1,0 +1,16 @@
+PODS:
+  - DKSwitchSlider (0.1.0)
+
+DEPENDENCIES:
+  - DKSwitchSlider (from `../`)
+
+EXTERNAL SOURCES:
+  DKSwitchSlider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DKSwitchSlider: bece2a12bc6e2611b64811151db0f484c4eee321
+
+PODFILE CHECKSUM: 9c3c2bcc34bb15c0155f9b6af6c8b615111153f0
+
+COCOAPODS: 1.8.4

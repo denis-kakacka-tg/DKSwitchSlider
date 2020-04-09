@@ -20,9 +20,53 @@ it, simply add the following line to your Podfile:
 pod 'DKSwitchSlider'
 ```
 
+## Usage
+
+```swift
+import DKSwitchSlider
+```
+
+```swift
+lazy var switcher: DKSwitchSlider = {
+    let switcher = DKSwitchSlider()
+    switcher.translatesAutoresizingMaskIntoConstraints = false
+    switcher.onImage = UIImage(named: "icn-on")
+    switcher.offImage = UIImage(named: "icn-off")
+    switcher.thumbImage = UIImage(named: "icn-power")
+    switcher.cornerRadius = 24
+    switcher.thumbCornerRadius = 24
+    switcher.isOn = true
+    switcher.showLabel = true
+    switcher.textColor = .white
+    switcher.text = "ON"
+    switcher.thumbBackgroundColor = .white
+    switcher.thumbImageTintColor = .black
+    switcher.onImageViewTintColor = .black
+    switcher.offImageViewTintColor = .white
+    switcher.addTarget(self, action: #selector(animateBackground), for: .valueChanged)
+
+    return switcher
+}()
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    view.addSubview(switcher)
+}
+
+@objc
+func animateBackground(sender: DKSwitchSlider) {
+    UIView.animate(withDuration: 0.25) {
+        self.switcher.text = sender.isOn ? "ON" : "OFF"
+        self.switcher.textColor = sender.isOn ? .white : .black
+        self.view.backgroundColor = sender.isOn ? UIColor(red: 1, green: 206/255, blue: 84/255, alpha: 1) : .black
+    }
+}
+```
+
 ## Author
 
-Denis Kakačka, dkakacka@sygic.com
+Denis Kakačka, deniskakacka@gmail.com
 
 ## License
 

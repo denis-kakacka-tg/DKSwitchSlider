@@ -1,0 +1,6 @@
+framework module Pods_DKSwitchSlider_Example {
+  umbrella header "Pods-DKSwitchSlider_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
