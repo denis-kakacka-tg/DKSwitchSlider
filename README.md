@@ -41,21 +41,15 @@ lazy var switcher: DKSwitchSlider = {
     switcher.thumbImageTintColor = .black
     switcher.onImageViewTintColor = .black
     switcher.offImageViewTintColor = .white
-    switcher.addTarget(self, action: #selector(animateBackground), for: .valueChanged)
+    switcher.addTarget(self, action: #selector(animate), for: .valueChanged)
 
     return switcher
 }()
 ```
 
-```
-override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    view.addSubview(switcher)
-}
-
-@objc
-func animateBackground(sender: DKSwitchSlider) {
+```swift
+@objcswift
+func animate(sender: DKSwitchSlider) {
     UIView.animate(withDuration: 0.25) {
         self.switcher.text = sender.isOn ? "ON" : "OFF"
         self.switcher.textColor = sender.isOn ? .white : .black
