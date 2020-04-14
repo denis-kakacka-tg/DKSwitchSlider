@@ -48,7 +48,7 @@ lazy var switcher: DKSwitchSlider = {
 ```
 
 ```swift
-@objcswift
+@objc
 func animate(sender: DKSwitchSlider) {
     UIView.animate(withDuration: 0.25) {
         self.switcher.text = sender.isOn ? "ON" : "OFF"
