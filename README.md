@@ -1,7 +1,8 @@
 # DKSwitchSlider
 
-[![Version](https://img.shields.io/cocoapods/v/DKSwitchSlider.svg?style=flat)](https://cocoapods.org/pods/DKSwitchSlider)
-[![Platform](https://img.shields.io/cocoapods/p/DKSwitchSlider.svg?style=flat)](https://cocoapods.org/pods/DKSwitchSlider)
+[![Version](https://img.shields.io/cocoapods/v/DKSwitchSlider.svg)](https://cocoapods.org/pods/DKSwitchSlider)
+[![License](https://img.shields.io/cocoapods/l/DKSwitchSlider.svg)](https://cocoapods.org/pods/DKSwitchSlider)
+[![Platform](https://img.shields.io/cocoapods/p/DKSwitchSlider.svg)](https://cocoapods.org/pods/DKSwitchSlider)
 
 ![](_dkswitchslider.gif) 
 
